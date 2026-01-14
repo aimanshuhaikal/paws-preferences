@@ -43,6 +43,8 @@ h1 {
   align-items: center;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
   touch-action: pan-x;
+  will-change: transform;     
+  transform: translateY(calc(var(--i, 0) * 4px));
 }
 .card:nth-child(n) {
   transform: translateY(calc((var(--i, 0)) * 4px));
@@ -81,5 +83,6 @@ h1 {
   color: #555;
   font-size: 0.95rem;
 }
+
 
 
